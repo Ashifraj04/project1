@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ashifraj Gaddi — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#7c3aed; --muted:#94a3b8; --glass: rgba(255,255,255,0.04);
+      --maxw:1100px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#071023);color:#e6eef8;line-height:1.5}
+    .wrap{max-width:var(--maxw);margin:40px auto;padding:24px}
+
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:110px;height:110px;border-radius:18px;overflow:hidden;flex:0 0 110px;background:linear-gradient(135deg,#1f2937,#111827);display:grid;place-items:center;font-weight:700;color:var(--accent);font-size:28px}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:24px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:18px;box-shadow:0 6px 18px rgba(2,6,23,0.6);}
+
+    .about h2,.projects h2,.skills h2,.contact h2{margin-top:0}
+    .projects .project{border-radius:10px;padding:12px;background:var(--glass);margin-bottom:12px}
+    .project h3{margin:0 0 6px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{font-size:12px;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.03);color:var(--muted)}
+
+    aside .card{position:sticky;top:24px}
+    .skills-list{display:flex;flex-direction:column;gap:8px}
+    .skill{display:flex;justify-content:space-between;align-items:center}
+    .bar{height:8px;background:rgba(255,255,255,0.04);border-radius:999px;flex:1;margin-left:10px;overflow:hidden}
+    .bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#4f46e5)}
+
+    .socials{display:flex;gap:10px;margin-top:12px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#4f46e5);color:white;text-decoration:none;font-weight:600}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+    @media (max-width:880px){.grid{grid-template-columns:1fr}.avatar{width:86px;height:86px;font-size:20px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">AG</div>
+      <div>
+        <h1>Ashifraj Gaddi</h1>
+        <p class="lead">B.Tech CSE student • Creator • Learner — I build small projects, make short educational videos, and explore stocks &amp; coding.</p>
+        <div class="socials">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn" href="#contact" style="background:transparent;border:1px solid rgba(255,255,255,0.06);">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card about">
+          <h2>About</h2>
+          <p>Hi — I'm Ashifraj (Asif). I'm a 1st-year B.Tech CSE student at RV University who enjoys coding, making YouTube Shorts about drawing, and learning about the stock market. I focus on building small web projects, learning Python, and improving my communication skills.</p>
+          <p style="margin-top:12px;color:var(--muted)">Quick facts: DOB: 22 July 2007 • Location: HK region • Languages: English, Hindi (written in English letters)</p>
+        </section>
+
+        <section id="projects" class="card projects" style="margin-top:16px">
+          <h2>Selected Projects</h2>
+          <div class="project">
+            <h3>Portfolio Website</h3>
+            <p class="muted">A responsive single-file portfolio (this page).</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsive</span></div>
+          </div>
+
+          <div class="project">
+            <h3>YouTube Shorts — Drawing Tutorials</h3>
+            <p class="muted">Short-form videos teaching step-by-step drawing techniques.</p>
+            <div class="tags"><span class="tag">Content</span><span class="tag">Video</span><span class="tag">Sketch</span></div>
+          </div>
+
+          <div class="project">
+            <h3>Stock Analysis Scripts</h3>
+            <p class="muted">Beginner intraday trading scripts and simple indicators in Python.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Finance</span></div>
+          </div>
+        </section>
+
+        <section class="card skills" style="margin-top:16px">
+          <h2>Skills</h2>
+          <div class="skills-list">
+            <div class="skill"><strong>HTML / CSS</strong><div class="bar" aria-hidden><i style="width:85%"></i></div></div>
+            <div class="skill"><strong>Python</strong><div class="bar" aria-hidden><i style="width:60%"></i></div></div>
+            <div class="skill"><strong>C / C++</strong><div class="bar" aria-hidden><i style="width:55%"></i></div></div>
+            <div class="skill"><strong>Video Editing</strong><div class="bar" aria-hidden><i style="width:50%"></i></div></div>
+          </div>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h2>Contact</h2>
+          <p style="color:var(--muted);margin:6px 0">Want to collaborate or contact me?</p>
+          <p><strong>Email</strong><br><a href="mailto:ashifraj@example.com" style="color:inherit;text-decoration:underline">ashifraj@example.com</a></p>
+          <p><strong>Phone</strong><br><span style="color:var(--muted)">+91 9XXXXXXXXX</span></p>
+
+          <div style="margin-top:12px">
+            <a class="btn" href="#" onclick="alert('Replace with link to resume.pdf')">Download Resume</a>
+          </div>
+
+          <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:14px 0">
+          <h3 style="margin:0 0 8px">Follow</h3>
+          <div style="display:flex;gap:8px">
+            <a href="#" title="YouTube" style="text-decoration:none;color:var(--muted)">YouTube</a>
+            <a href="#" title="Instagram" style="text-decoration:none;color:var(--muted)">Instagram</a>
+            <a href="#" title="LinkedIn" style="text-decoration:none;color:var(--muted)">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px;text-align:center">
+          <h3>Quick Links</h3>
+          <p style="margin:8px 0"><a href="#projects" style="color:inherit;text-decoration:underline">Projects</a></p>
+          <p style="margin:8px 0"><a href="#contact" style="color:inherit;text-decoration:underline">Contact</a></p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Ashifraj Gaddi — Built with ❤️
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
